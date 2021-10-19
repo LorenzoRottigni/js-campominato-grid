@@ -1,26 +1,27 @@
 header{
     height: 15vh;
-    min-width: 75vh;
+    min-width: 75vh;/*for better responsive*/
 }
 main{
     height: 85vh;
-    min-width: 75vh;
+    min-width: 75vh;/*for better responsive*/
 }
 .box1x1{
-    width: calc(75vh/10);
-    height: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    /*ratio 1x1*/
+    width: calc(75vh/10);/*default 10x10*/
+    height: 100%;/*fit to box row height 75vh/10*/
     border: solid 1px black;
     color: white;
+    /*for span text*/
     position: relative;
-
 }
 .box-row{
+    /*ratio height of boxes*/
     height: calc(75vh/10);
+    /*for better responsive*/
     min-width: 75vh;
 }
+/*for span in boxes*/
 .super-center{
     position: absolute;
     z-index: 99;
