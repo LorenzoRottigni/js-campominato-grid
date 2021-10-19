@@ -1,0 +1,23 @@
+header{
+    height: 15vh;
+}
+main{
+    height: 85vh;
+}
+.box1x1{
+    width: calc(75vh/10);
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: solid 1px black;
+    color: white;
+    position: relative;
+}
+.box-row{
+    height: calc(75vh/10);
+}
+.super-center{
+    position: absolute;
+    z-index: 99;
+}
