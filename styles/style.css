@@ -1,8 +1,10 @@
 header{
     height: 15vh;
+    min-width: 75vh;
 }
 main{
     height: 85vh;
+    min-width: 75vh;
 }
 .box1x1{
     width: calc(75vh/10);
@@ -13,9 +15,11 @@ main{
     border: solid 1px black;
     color: white;
     position: relative;
+
 }
 .box-row{
     height: calc(75vh/10);
+    min-width: 75vh;
 }
 .super-center{
     position: absolute;

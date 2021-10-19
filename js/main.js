@@ -32,7 +32,24 @@ function setEventListeners(){
     boxes.forEach(box => {
         const ciao = 'ciao'
         box.addEventListener('click', ()=>{
-            box.lastChild.src = '../img/wooden-box-alt.png'
+            if((parseInt(box.firstChild.textContent)%2) === 0){
+                box.lastChild.src = '../img/wooden-box-alt.png'
+                box.lastChild.style.backgroundColor = "#9f6934";
+            }else{////!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!BOMB TRYAL IMPLEMENTATION
+                box.lastChild.animate([
+                    // keyframes
+                    { backgroundColor: 'coral' },
+                    { backgroundColor: 'transparent' },
+                    { backgroundColor: 'red' },
+                  ], {
+                    // timing options
+                    duration: 1500,
+                    iterations: 1
+                  });
+                box.firstChild.textContent = '';
+                box.lastChild.src = '../img/bomb.png'
+            }
+              
         })
     });
 }
