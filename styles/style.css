@@ -1,3 +1,14 @@
+@keyframes placeHolderShimmer {
+    0% {
+        background:rgba(144, 238, 144, 0.5);
+    }
+    50%{
+        background:rgba(144, 238, 144, 1);
+    }
+    100% {
+        background:rgba(144, 238, 144, 0.5);
+    }
+  }
 header{
     height: 15vh;
     min-width: 75vh;/*for better responsive*/
@@ -5,6 +16,8 @@ header{
 main{
     height: 85vh;
     min-width: 75vh;/*for better responsive*/
+    
+    animation: placeHolderShimmer 1s infinite linear
 }
 .box1x1{
     /*ratio 1x1*/

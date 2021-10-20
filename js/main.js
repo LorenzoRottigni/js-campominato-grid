@@ -16,7 +16,7 @@ function writeGrid(GENERATION_KEY){
             //create new row
             const boxRow = document.createElement("div");
             //add classes to new row
-            boxRow.classList.add('box-row','d-flex','flex-wrap','justify-content-center');
+            boxRow.classList.add('box-row','d-flex','flex-wrap','justify-content-center','shadow');
             //set id of new row
             boxRow.setAttribute('id', 'row-'+ k);
             //ad new row to row container
@@ -25,7 +25,7 @@ function writeGrid(GENERATION_KEY){
         //create new box
         const box = document.createElement("div");
         //add classes to new box
-        box.classList.add('box1x1','ratio','ratio1x1')
+        box.classList.add('box1x1','ratio','ratio1x1','rounded','shadow')
         //ad text to new box
         box.innerHTML = '<span class="super-center text-white fs-3 d-flex justify-content-center align-items-center" >' + (i + 1) + '</span>';
         //create new wooden box image
